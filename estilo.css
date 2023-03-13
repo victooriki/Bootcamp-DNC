@@ -14,8 +14,9 @@
      margin: 0px;
      padding: 0px;
      background-repeat: no-repeat;
-     background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
-     ;
+     background-image: url(backimg.jpg);
+     background-size: 100%;
+     background-repeat: no-repeat;
 }
 
  #principal {
@@ -154,7 +155,7 @@
 
 footer {
     width: 100%;
-    background-color: var(--azul-dnc);
+    background-color: var(--azul-dnc)
 }
 footer .linha1 {
     display: flex;
@@ -227,7 +228,7 @@ footer .linha2 a:hover{
 footer .linha2 a:first-child{
     border-right: 2px solid white;
 }
-@media only screen and (max-width:600px){}
+@media only screen and (max-width:600px){
     #principal{
         flex-direction: column;
         height: auto;
@@ -272,4 +273,5 @@ footer .linha2 a:first-child{
     footer .endereço {
         width: 95%;
         margin-bottom: 20px;
+}
 }
