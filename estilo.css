@@ -14,7 +14,7 @@
      margin: 0px;
      padding: 0px;
      background-repeat: no-repeat;
-     background-image: url(backimg.jpg);
+     background-image: url(imagens/backimg.jpg);
      background-size: 100%;
      background-repeat: no-repeat;
 }
@@ -22,11 +22,9 @@
  #principal {
      width: 100%;
      height: 100px;
-     background-color: var(--preto-dnc);
      display: flex;
      justify-content: space-between;
      align-items: center;
-     border-bottom: 1px solid #BABABA;
  }
 
     #menu {
@@ -229,6 +227,9 @@ footer .linha2 a:first-child{
     border-right: 2px solid white;
 }
 @media only screen and (max-width:600px){
+    body{
+        background-repeat: repeat;
+    }
     #principal{
         flex-direction: column;
         height: auto;
