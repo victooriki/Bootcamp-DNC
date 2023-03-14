@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
 
  :root {
     --azul-dnc: #0C70F2;
@@ -10,150 +10,170 @@
  }
 
 
- body {
-     margin: 0px;
-     padding: 0px;
-     background-repeat: no-repeat;
-     background-image: url(imagens/backimg.jpg);
-     background-size: 100%;
-     background-repeat: no-repeat;
+body {
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-image: url(imagens/backimg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
  #principal {
-     width: 100%;
-     height: 100px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    #menu {
-     display: flex;
-     width: 50%;
-     justify-content: space-around;
-     align-items: center;
-     margin-left: 4%;
- }
+#menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 4%;
+}
 
-    #principal div a {
-     font-size: 25px;
-     font-weight: 600;
-     color: white;
-     text-decoration: none;
-     font-family: var(--font-padrao)
+#principal div a {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-padrao)
+}
 
- }
+#principal div a:hover {
+    color: var(--cinza-hover);
+}
 
-     #principal div a:hover {
-     color: var(--cinza-hover);
- }
+#principal button {
+    margin-right: 5%;
+    background: var(--azul-dnc);
+    border: 0px;
+    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+    width: 80px;
+    height: 40px;
+    font-family: var(--font-padrao);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
 
-    #principal button {
-     margin-right: 5%;
-     background: var(--azul-dnc);
-     border: 0px;
-     box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
-     width: 80px;
-     height: 40px;
-     font-family: var(--font-padrao);
-     font-style: normal;
-     font-weight: 600;
-     font-size: 20px;
-     color: #FFFFFF;
-     cursor: pointer;
- }
+#principal button:hover{
+    background-color: rgba(11, 99, 212, 0.9);
+}
 
-    /* seção principal */
+/* seção principal */
 
-    section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-        header{
-            color: white;
-            font-family: var(--font-padrao);
-        }
-        header h1{
-            font-size: 80px;
-            font-weight: 800px;
-            text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
-            margin-bottom: 20px;
-        }
-        header h2{
-            text-align: center;
-            font-size: 40px;
-            font-weight: 700px;
+header {
+    color: white;
+    font-family: var(--font-padrao);
+}
 
-            margin-bottom: 100px;
-        }
-        header .invert {
-            background-color: black;
-            font-weight: bolder;
-            padding: 5px;
-        }
+header h1 {
+    font-size: 80px;
+    font-weight: 800px;
+    text-align: center;
 
-        /*formulario*/
+    margin-bottom: 20px;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700px;
+
+    margin-bottom: 100px;
+}
+
+header .invert {
+    background-color: black;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+/*formulario*/
         
-    form {
+form {
         color: white;
         font-family: var(--font-padrao);
         font-size: 30px;
         font-weight: 600px;
         width: 600px;
     }
-    .formGroup {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    form input{
-        border-radius: 10px;
-        height: 35px;
-        border: 0px;
-        font-size: 20px;
-        padding: 5px 10px 5px 10px;
-        background-color: rgba(255, 255, 255, 0.9);;
-    }
-    form label {
-        margin: 5px 0px 5px 0px;
-    }
-    form input::placeholder{
-        color: rgba(57, 57, 57, 0.5);
-    }
-    .checkboxItens label{
-        font-size: 25px;
-    }
-    .checkboxItens{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    input[type="checkbox"]{
-        transform: scale(1.6);
-    }
-    input[type="submit"]{
-        background-color: rgba(12, 112, 242, 0.9);
-        width: 100%;
-        height: 55px;
-        box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
-        border-radius: 10px;
-        font-size: 32px;
-        color: white;
-        margin-top: 100px;
-        cursor: pointer;
-    }
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form input {
+    border-radius: 10px;
+    height: 35px;
+    border: 0px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    ;
+}
+
+form label {
+    margin: 5px 0px 5px 0px;
+}
+
+form input::placeholder {
+    color: rgba(57, 57, 57, 0.5);
+}
+
+.checkboxItens label {
+    font-size: 25px;
+}
+
+.checkboxItens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.6);
+}
+
+input[type="submit"] {
+    background-color: rgba(12, 112, 242, 0.9);
+    width: 100%;
+    height: 55px;
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+    border-radius: 10px;
+    font-size: 32px;
+    color: white;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(11, 99, 212, 0.9);
+}
     
 /* Footer */
 
 footer {
     width: 100%;
-    background-color: var(--azul-dnc)
+    background-color: #00000044;
 }
 footer .linha1 {
     display: flex;
@@ -173,7 +193,7 @@ footer nav{
 }
 footer h5{
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 800px;
     font-size: 25px;
     font-family: var(--font-padrao);
@@ -212,6 +232,7 @@ footer .linha2{
     margin: 0px;
     padding: 100px 0px 10px 0px;
 }
+
 footer .linha2 a{
     font-family: var(--font-padrao);
     font-size: 18px;
@@ -220,15 +241,18 @@ footer .linha2 a{
     text-decoration: none;
     padding: 5px;
 }
+
 footer .linha2 a:hover{
     color: var(--cinza-hover);
 }
+
 footer .linha2 a:first-child{
     border-right: 2px solid white;
 }
 @media only screen and (max-width:600px){
     body{
-        background-repeat: repeat;
+        background-image: url(imagens/backimgmediaquery.jpg);
+        background-size: 150%;
     }
     #principal{
         flex-direction: column;
